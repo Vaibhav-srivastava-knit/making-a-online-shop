@@ -2,7 +2,7 @@ const { json } = require('body-parser');
 const fs=require('fs');
 const path=require('path');
 const p=path.join(path.dirname(require.main.filename),'data','product.json')
-let product=[];
+var product=[];
 module.exports = class prd
 {
    
@@ -14,13 +14,16 @@ module.exports = class prd
   {
       fs.readFile(p,(err,data)=>
       {
+  
         if(!err){
           console.log('err')
             product=JSON.parse(data);
           }
+          else{
           product.push(this)
           fs.writeFile(p,JSON.stringify(product),(err)=>
            console.log(err))
+          }
 
       });
   
@@ -29,6 +32,7 @@ module.exports = class prd
       fs.readFile(p,(err,data)=>{
         if(err)
         cb([]);
+        else
         cb(JSON.parse(data))
       })
   }
