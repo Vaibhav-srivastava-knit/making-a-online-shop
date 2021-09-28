@@ -19,11 +19,10 @@ module.exports = class prd
           console.log('err')
             product=JSON.parse(data);
           }
-          else{
           product.push(this)
           fs.writeFile(p,JSON.stringify(product),(err)=>
            console.log(err))
-          }
+          
 
       });
   
