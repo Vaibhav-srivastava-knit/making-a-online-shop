@@ -54,7 +54,7 @@ app.use(shopRoutes);
 app.use(authRoutes);
 app.use(errorController.get404);
 
-mongoose.connect("mongodb+srv://vibhu:hsLZ12WK68BG8CiI@cluster0.fmro2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect("your mongo db connection string")
 .then(results=>{  
     //console.log(results);
   app.listen(3000);
