@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const path = require('path');
 
 const express = require('express');
@@ -23,3 +24,15 @@ router.post('/edit-product',isAuth, adminController.postEditProduct);
 router.post('/delete-product',isAuth, adminController.postDeleteProduct);
 
 module.exports = router;
+=======
+const express=require('express');
+const path=require('path');
+const router=express.Router();
+const productsController=require('../controllers/products.js')
+
+//const rootdir=require('../util/path')
+
+router.get('/add',productsController.getAddProduct);
+router.post('/product',productsController.postAddProduct)
+exports.routes = router;
+>>>>>>> 15adfbc6063721a2d5c5f399e90d42c2f1883228
