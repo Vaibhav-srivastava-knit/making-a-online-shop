@@ -10,7 +10,7 @@ const csrf= require('csurf');
 const app = express();
 const session=require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
-const MONGODB_URI='mongodb+srv://vibhu:hsLZ12WK68BG8CiI@cluster0.fmro2.mongodb.net/myFirstDatabase'
+const MONGODB_URI='your mongo db connection string'
 const store =new MongoDBStore({
   uri:MONGODB_URI,
   collection:'session' 
