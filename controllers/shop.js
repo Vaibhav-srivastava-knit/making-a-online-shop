@@ -1,8 +1,12 @@
 const Product = require('../models/product');
 const Order = require('../models/order');
+<<<<<<< HEAD
 const fs=require('fs');
 const path=require('path');
 const PDFDocument=require('pdfkit')
+=======
+
+>>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
 exports.getProducts = (req, res, next) => {
   Product.find()
     .then(products => {
@@ -62,7 +66,10 @@ exports.getCart = (req, res, next) => {
 
 exports.postCart = (req, res, next) => {
   const prodId = req.body.productId;
+<<<<<<< HEAD
   // console.log(prodId);
+=======
+>>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
   Product.findById(prodId)
     .then(product => {
       return req.user.addToCart(product);
@@ -90,7 +97,10 @@ exports.postOrder = (req, res, next) => {
       const products = user.cart.items.map(i => {
         return { quantity: i.quantity, product: { ...i.productId._doc } };
       });
+<<<<<<< HEAD
       console.log(products);
+=======
+>>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
       const order = new Order({
         user: {
           email: req.user.email,
@@ -120,6 +130,7 @@ exports.getOrders = (req, res, next) => {
     })
     .catch(err => console.log(err));
 };
+<<<<<<< HEAD
 exports.getInvoiceOrder = (req, res, next)=>{
   const orderId = req.params.orderId;
   Order.findById(orderId)
@@ -166,3 +177,5 @@ exports.getInvoiceOrder = (req, res, next)=>{
   .catch(err => next(err));
  
 }
+=======
+>>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
