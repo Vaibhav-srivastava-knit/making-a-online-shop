@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
   "name": "nodejs-complete-guide",
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
@@ -31,38 +27,12 @@
     "googleapis": "^100.0.0",
     "mongodb": "^3.1.6",
     "mongoose": "^6.3.1",
-<<<<<<< HEAD
     "multer": "^1.4.4",
     "mysql2": "^1.6.1",
     "nodemailer": "^6.7.5",
     "pdfkit": "^0.13.0",
     "pug": "^2.0.3",
-    "sequelize": "^5.0.0-beta.11"
-=======
-    "mysql2": "^1.6.1",
-    "nodemailer": "^6.7.5",
-    "pug": "^2.0.3",
-    "sequelize": "^5.0.0-beta.11"
-=======
-  "name": "app1.js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app1.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app1.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-handler": "^0.2.0",
-    "handlebars": "^4.7.7",
-    "nodemon": "^2.0.12",
-    "pug": "^3.0.2"
->>>>>>> 15adfbc6063721a2d5c5f399e90d42c2f1883228
->>>>>>> cea3c21f6f982b69ad0e1486989d2b27ffe2df08
+    "sequelize": "^5.0.0-beta.11",
+    "stripe": "^9.1.0"
   }
 }
